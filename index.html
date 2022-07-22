@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <img src="./images/icon-star.svg" alt="" srcset="" />
+        </div>
+        <div class="card-header">How did we do?</div>
+        <div class="card-pagraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </div>
+
+        <ul class="card-rate">
+          <li tabindex="1" class="card-rate__item">1</li>
+          <li tabindex="1" class="card-rate__item">2</li>
+          <li tabindex="1" class="card-rate__item">3</li>
+          <li tabindex="1" class="card-rate__item">4</li>
+          <li tabindex="1" class="card-rate__item">5</li>
+        </ul>
+        <button class="btn-submit">SUBMIT</button>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div id="thanks" class="card contetn_center hidden">
+        <div class="card-thank__img">
+          <img src="./images/illustration-thank-you.svg" alt="" srcset="" />
+        </div>
+        <div class="voted">
+          You selected <span class="result"></span> out of 5
+        </div>
+        <div class="content">
+          <div class="card-header card-header__thanks">Thank you!</div>
+          <div class="card-pagraph text__center">
+            <!-- Add rating here -->
+            Thank you! We appreciate you taking the time to give a rating. If
+            you ever need more support, don’t hesitate to get in touch!
+          </div>
+        </div>
+      </div>
+
+      <!-- Thank you state end -->
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">To Dat</a>.
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
